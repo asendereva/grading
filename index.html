@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet"> 
+    <!-- Только CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="ws_stud_wrapper ws_stud_w-theme section-web-webinar-new ng-scope" ng-controller="MyStudyLessonBlockCtrl">
+        <!-- ngInclude: '/view/my_study/group/index/left_sidebar.html' --><div class="ws_stud_left-bar hidden-content ng-scope" ng-include="'/view/my_study/group/index/left_sidebar.html'"><a href="/my_study/group/index/#/group/321/" class="title ng-binding ng-scope">
+        <img src="/images/img/left-bar-ico.svg" alt="">
+        Главная страница курса
+    </a>
+    <p class="ws_stud_mobile-title ng-binding ng-scope">
+        Вся програма курса
+        <a href="javascript:void(0)" class="collapse-btn theme-btn js-open">
+            <img src="/images/img/theme-arrow.svg" alt="">
+        </a>
+    </p>
+    <div class="ws_stud_js-show-content ng-scope">
+        <div class="themes">
+            <!-- ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}" style="">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 0
+                        <span class="ng-binding">11.07-12.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        О компании
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 1
+                        <span class="ng-binding">12.07-13.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Продукты Академии
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 2
+                        <span class="ng-binding">13.07-14.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Знакомство с командой
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 3
+                        <span class="ng-binding">14.07-15.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Внутренняя организация компании
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 4
+                        <span class="ng-binding">16.07-17.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Полное руководство по основам интернет маркетинга за 10 часов
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 5
+                        <span class="ng-binding">18.07-18.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Вопросы оплат, договоров, документооборота
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 6
+                        <span class="ng-binding">19.07-19.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Чек-лист для новичка
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 7
+                        <span class="ng-binding">20.07-20.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Тестирование
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 8
+                        <span class="ng-binding">21.07-21.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Для отдела продаж
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons --><div class="theme w-content ng-scope" ng-repeat="lesson in group.lessons" ng-class="{'disabled': lesson.closed, 'is-active': params.activeLesson == lesson.id}">
+    
+                <div class="collapse-heading" ng-click="listBlocksByLesson(lesson.id)" ng-class="{'opened' : params.activeLesson == lesson.id}">
+                    <p class="ng-binding">
+                        Тема 9
+                        <span class="ng-binding">22.07-22.07.2021</span>
+                    </p>
+                    <div class="description ng-binding">
+                        Дать оценку адаптации
+                    </div>
+                    <a href="javascript:void(0)" class="collapse-btn theme-btn">
+                        <img src="/images/img/theme-arrow.svg" alt="">
+                    </a>
+                </div>
+                <!-- ngIf: params.activeLesson == lesson.id -->
+            </div><!-- end ngRepeat: lesson in group.lessons -->
+        </div>
+    </div>
+    </div>
+        <div class="ws_stud_main">
+            <div class="main-theme-heading">
+                <h1 class="ng-binding">Тема: Продукты Академии</h1>
+                <!-- ngIf: lessonBlock.content.name --><div class="subtitle ng-binding ng-scope" ng-if="lessonBlock.content.name" >Лекция.
+                    Курс PPC-специалист
+                    <!-- ngIf: lessonBlock.type == 5 -->
+    
+    
+                </div><!-- end ngIf: lessonBlock.content.name -->
+                <!-- ngIf: lessonBlock.type==6 -->
+                <!-- ngIf: lessonBlock.user_id --><p class="subtitle ng-binding ng-scope" ng-if="lessonBlock.user_id">Лектор.
+                    <span class="text-blue ng-binding">Ольга Оникиенко</span>
+                    <small>(<span ng-bind-html="lessonBlock.user.info['posada' + globalUser.langField]" class="ng-binding">CMO в  <b>Salesdoubler</b></span>)</small>
+                    <a target="_blank" href="https://webpromoexperts.net/ru/lectors/olga-onikienko-2" class="ng-binding">
+                        Подробнее о лекторе
+                        <img src="/images/img/curr-arrow.svg" alt="">
+                    </a>
+                </p><!-- end ngIf: lessonBlock.user_id -->
+            </div>
+    
+            <!-- ngIf: lessonBlock.videoLink --><div class="theme-video-elem ng-scope" ng-if="lessonBlock.videoLink" >
+                <iframe src="https://player.vimeo.com/video/355082748" width="100%" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div><!-- end ngIf: lessonBlock.videoLink -->
+            <!-- ngIf: clcmeeting_loginUrl -->
+           <!-- <div ng-bind-html="lessonBlock.block_top"></div>-->
+            <div class="description" inner-content="lessonBlock.content.block_top"></div>
+            <div>
+    
+    
+                <!-- ngIf: test.testLink -->
+    
+            </div>
+    
+    
+            <!-- ngIf: !lessonBlock.ratingBlock && (lessonBlock.type == 5 || lessonBlock.type == 1)  && (lessonBlock.lesson.interval_theme_start | date : 'yyyy-MM-dd') <= (currentDate | date : 'yyyy-MM-dd') --><div class="button-complete ng-scope" ng-if="!lessonBlock.ratingBlock &amp;&amp; (lessonBlock.type == 5 || lessonBlock.type == 1)  &amp;&amp; (lessonBlock.lesson.interval_theme_start | date : 'yyyy-MM-dd') <= (currentDate | date : 'yyyy-MM-dd')" >
+                <div class="help-item">
+                    <div class="curator">
+                        <p class="title ng-binding">Куратор группы</p>
+                        <div ng-bind-html="group.kurator.img" class="ng-binding"><img src="https://webpromoexperts.net/images/thumbs/YPXGLHF3No-90-90.jpg?v=1.0"></div>
+                        <p class="ng-binding">HR WebPromo</p>
+                        <span ng-bind-html="group.kurator.info['posada' + globalUser.langField]" class="ng-binding"></span>
+                    </div>
+                    <div class="help-inner">
+                        <p class="title ng-binding">Пожалуйста, помогите нам стать лучше, оцените просмотренные материалы</p>
+                        <div class="buttons-emotion">
+                            <a href="javascript:void(0);" ng-click="modalView()"><img src="/img/emotion1.png" alt=""></a>
+                            <a href="javascript:void(0);" ng-click="modalView()"><img src="/img/emotion2.png" alt=""></a>
+                            <a href="javascript:void(0);" ng-click="modalView()"><img src="/img/emotion3.png" alt=""></a>
+                            <a href="javascript:void(0);" ng-click="modalView()"><img src="/img/emotion4.png" alt=""></a>
+                            <a href="javascript:void(0);" ng-click="modalView()"><img src="/img/emotion5.png" alt=""></a>
+                        </div>
+                        <p class="grade-text">*После просмотра каждой лекции/вебинара и вашей оценки, вы получаете <span class="colortext">+1 балл к вашему рейтингу</span></p>
+                        <p class="add-info ng-binding">Мы постоянно совершенствуем процесс обучения и рассчитываем на ваш честный ответ</p>
+                    </div>
+                </div>
+            </div><!-- end ngIf: !lessonBlock.ratingBlock && (lessonBlock.type == 5 || lessonBlock.type == 1)  && (lessonBlock.lesson.interval_theme_start | date : 'yyyy-MM-dd') <= (currentDate | date : 'yyyy-MM-dd') -->
+    
+    
+           <!-- <div class="description" ng-bind-html="lessonBlock.description2"></div>-->
+    
+            <!-- ngIf: lessonBlock.addMaterials.length -->
+    
+            <div class="mt30"></div>
+            <!-- ngIf: lessonBlock.lesson.isExam && lessonBlock.type==5 -->
+    
+            <!-- ngIf: lessonBlock.type==3 -->
+            <!-- ngIf: lessonBlock.type==7 -->
+    
+            <!-- ngIf: lessonBlock.type==5 && lessonBlock.lesson.hideChat==0  && !lessonBlock.lesson.isExam -->
+    
+        </div>
+    </div>
+    <!-- Пакет JavaScript с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
